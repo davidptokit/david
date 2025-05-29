@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Otokiti | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Otokiti David</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Hi, I'm Otokiti David</h1>
+                <p>Front-End Web Developer & JavaScript Enthusiast</p>
+                <a href="#projects" class="cta-btn">View My Work</a>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate web developer with a strong background in building interactive and responsive websites. My career interests include modern JavaScript frameworks, UI/UX design, and creating impactful digital experiences. I have completed several personal projects and am currently advancing my skills at New Horizons ICT Resource Center.</p>
+                    <ul class="about-list">
+                        <li><strong>Career Interests:</strong> Web Development, UI/UX, JavaScript</li>
+                        <li><strong>Goals:</strong> Build impactful web applications</li>
+                        <li><strong>Experience:</strong> New Horizons ICT Resource Center, personal projects</li>
+                    </ul>
+                </div>
+                <div class="about-skills">
+                    <h3>Skills Overview</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Figma, React, Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="01">Project 1</button>
+                <button class="filter-btn" data-filter="02">Project 2</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="01">
+                    <img src="image-02.jpg" alt="Color Picker Demo">
+                    <div class="project-info">
+                        <h3>Color Picker</h3>
+                        <p>A simple and interactive color picker tool built with JavaScript.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+                        <p><strong>Role:</strong> Developer</p>
+                        <a href="#" target="_blank">Live Demo</a> |
+                        <a href="#" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="02">
+                    <img src="image-03.jpg" alt="Counter Demo">
+                    <div class="project-info">
+                        <h3>Counter App</h3>
+                        <p>A JavaScript counter app with increment, decrement, and reset features.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+                        <p><strong>Role:</strong> Developer</p>
+                        <a href="#" target="_blank">Live Demo</a> |
+                        <a href="#" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bar"><span style="width:90%">HTML5</span></div>
+                    <div class="skill-bar"><span style="width:85%">CSS3</span></div>
+                    <div class="skill-bar"><span style="width:60%">JavaScript</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design Tools</h3>
+                    <div class="skill-bar"><span style="width:70%">Figma</span></div>
+                    <div class="skill-bar"><span style="width:60%">Adobe Photoshop</span></div>
+                    <div class="skill-bar"><span style="width:80%">CorelDraw4</span></div>
+
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience-section">
+            <h2>Experience</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>New Horizons ICT Resource Center</strong> – Student (2024-2025)
+                    <ul>
+                        <li>Learned web development fundamentals</li>
+                        <li>Completed hands-on projects</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Personal Projects</strong> – Developer (2023-2025)
+                    <ul>
+                        <li>Built and deployed web applications</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+                <div id="formFeedback"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span id="datetime"></span>
+            <span>&copy; <span id="year"></span> David. All rights reserved.</span>
+            <a href="#home" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
